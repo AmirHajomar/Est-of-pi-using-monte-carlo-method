@@ -1,38 +1,56 @@
+Metadata-Version: 2.4
+Name: pimc
+Version: 2.0.0
+Summary: High-performance Monte Carlo estimation of π with beautiful visualizations
+Author: Monte Carlo Team
+License: MIT
+Project-URL: Homepage, https://github.com/username/pimc
+Project-URL: Documentation, https://github.com/username/pimc#readme
+Project-URL: Repository, https://github.com/username/pimc
+Project-URL: Issues, https://github.com/username/pimc/issues
+Keywords: monte-carlo,pi,simulation,statistics,visualization,mathematics,probability
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Topic :: Scientific/Engineering :: Visualization
+Classifier: Typing :: Typed
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy>=1.24.0
+Requires-Dist: matplotlib>=3.7.0
+Requires-Dist: scipy>=1.10.0
+Provides-Extra: cli
+Requires-Dist: rich>=13.0.0; extra == "cli"
+Provides-Extra: web
+Requires-Dist: flask>=3.0.0; extra == "web"
+Requires-Dist: flask-cors>=4.0.0; extra == "web"
+Provides-Extra: all
+Requires-Dist: rich>=13.0.0; extra == "all"
+Requires-Dist: flask>=3.0.0; extra == "all"
+Requires-Dist: flask-cors>=4.0.0; extra == "all"
+Provides-Extra: dev
+Requires-Dist: pytest>=7.0.0; extra == "dev"
+Requires-Dist: pytest-cov>=4.0.0; extra == "dev"
+Requires-Dist: black>=23.0.0; extra == "dev"
+Requires-Dist: ruff>=0.1.0; extra == "dev"
+Requires-Dist: mypy>=1.0.0; extra == "dev"
+Dynamic: license-file
+
 <div align="center">
 
-<<<<<<< /Users/atta/Est-of-pi-using-monte-carlo-method/README.md
 # 🎯 πMC
-=======
-# piMC
-
-### High-Performance Monte Carlo Estimation of π
-
-[![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
-[![Tests](https://img.shields.io/badge/tests-passing-brightgreen.svg)]()
-[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
-
-**Beautiful** • **Fast** • **Accurate** • **Educational**
-
-[Features](#features) • [Quick Start](#quick-start) • [CLI](#command-line-interface) • [Web Dashboard](#web-dashboard) • [API](#python-api) • [Visualization](#visualization-themes)
-
-</div>
-
----
-
-## Features
-
-- **High Performance** — Vectorized NumPy computation with optional parallel processing
-- **Stunning Visualizations** — Publication-quality plots with 8 beautiful themes
-- **Advanced Statistics** — Confidence intervals, convergence diagnostics, hypothesis testing
-- **Variance Reduction** — Antithetic, stratified, and quasi-random sampling methods
-- **Rich CLI** — Beautiful terminal interface with progress bars and live updates
-- **Web Dashboard** — Interactive browser-based visualization with real-time simulation
-- **Real-Time Animation** — Watch the simulation converge in real-time
-- **Comprehensive Tests** — Full test suite with pytest
-
----
->>>>>>> /Users/atta/.windsurf/worktrees/Est-of-pi-using-monte-carlo-method/Est-of-pi-using-monte-carlo-method-c7a8e5fd/README.md
 
 ### High-Performance Monte Carlo Estimation of π
 
@@ -63,8 +81,6 @@
 ---
 
 ## 🚀 Quick Start
-
-### Installation
 
 ### Installation
 
@@ -106,11 +122,7 @@ Grade: A
 
 ---
 
-<<<<<<< /Users/atta/Est-of-pi-using-monte-carlo-method/README.md
 ## 💻 Command-Line Interface
-=======
-## Command-Line Interface
->>>>>>> /Users/atta/.windsurf/worktrees/Est-of-pi-using-monte-carlo-method/Est-of-pi-using-monte-carlo-method-c7a8e5fd/README.md
 
 The CLI provides a beautiful terminal experience with rich formatting.
 
@@ -158,11 +170,7 @@ pimc interactive -n 20000
 
 ---
 
-<<<<<<< /Users/atta/Est-of-pi-using-monte-carlo-method/README.md
 ## 🌐 Web Dashboard
-=======
-## Web Dashboard
->>>>>>> /Users/atta/.windsurf/worktrees/Est-of-pi-using-monte-carlo-method/Est-of-pi-using-monte-carlo-method-c7a8e5fd/README.md
 
 Launch an interactive web dashboard for visual exploration:
 
@@ -181,11 +189,7 @@ Features:
 
 ---
 
-<<<<<<< /Users/atta/Est-of-pi-using-monte-carlo-method/README.md
 ## 📚 Python API
-=======
-## Python API
->>>>>>> /Users/atta/.windsurf/worktrees/Est-of-pi-using-monte-carlo-method/Est-of-pi-using-monte-carlo-method-c7a8e5fd/README.md
 
 ### Basic Usage
 
@@ -258,11 +262,7 @@ for n, estimate, x, y, inside in sim.stream(batch_size=100):
 
 ---
 
-<<<<<<< /Users/atta/Est-of-pi-using-monte-carlo-method/README.md
 ## 🎨 Visualization Themes
-=======
-## Visualization Themes
->>>>>>> /Users/atta/.windsurf/worktrees/Est-of-pi-using-monte-carlo-method/Est-of-pi-using-monte-carlo-method-c7a8e5fd/README.md
 
 Choose from 8 stunning themes:
 
@@ -285,11 +285,7 @@ viz = PiVisualizer(theme="cyberpunk")
 
 ---
 
-<<<<<<< /Users/atta/Est-of-pi-using-monte-carlo-method/README.md
 ## 🔬 Sampling Methods
-=======
-## Sampling Methods
->>>>>>> /Users/atta/.windsurf/worktrees/Est-of-pi-using-monte-carlo-method/Est-of-pi-using-monte-carlo-method-c7a8e5fd/README.md
 
 | Method | Description | Variance Reduction |
 |--------|-------------|-------------------|
@@ -310,11 +306,7 @@ for method in ["standard", "antithetic", "stratified", "quasi_random"]:
 
 ---
 
-<<<<<<< /Users/atta/Est-of-pi-using-monte-carlo-method/README.md
 ## 📐 The Mathematics
-=======
-## The Mathematics
->>>>>>> /Users/atta/.windsurf/worktrees/Est-of-pi-using-monte-carlo-method/Est-of-pi-using-monte-carlo-method-c7a8e5fd/README.md
 
 The Monte Carlo method estimates π using geometric probability:
 
@@ -341,11 +333,7 @@ The error decreases at rate **O(1/√n)**:
 
 ---
 
-<<<<<<< /Users/atta/Est-of-pi-using-monte-carlo-method/README.md
 ## 🧪 Testing
-=======
-## Testing
->>>>>>> /Users/atta/.windsurf/worktrees/Est-of-pi-using-monte-carlo-method/Est-of-pi-using-monte-carlo-method-c7a8e5fd/README.md
 
 ```bash
 # Run all tests
@@ -360,11 +348,7 @@ pytest tests/test_simulation.py -v
 
 ---
 
-<<<<<<< /Users/atta/Est-of-pi-using-monte-carlo-method/README.md
 ## 📁 Project Structure
-=======
-## Project Structure
->>>>>>> /Users/atta/.windsurf/worktrees/Est-of-pi-using-monte-carlo-method/Est-of-pi-using-monte-carlo-method-c7a8e5fd/README.md
 
 ```
 pimc/
@@ -385,11 +369,7 @@ pimc/
 
 ---
 
-<<<<<<< /Users/atta/Est-of-pi-using-monte-carlo-method/README.md
 ## 🎓 Educational Value
-=======
-## Educational Value
->>>>>>> /Users/atta/.windsurf/worktrees/Est-of-pi-using-monte-carlo-method/Est-of-pi-using-monte-carlo-method-c7a8e5fd/README.md
 
 This project demonstrates:
 
@@ -408,11 +388,7 @@ Perfect for courses in:
 
 ---
 
-<<<<<<< /Users/atta/Est-of-pi-using-monte-carlo-method/README.md
 ## 📄 License
-=======
-## License
->>>>>>> /Users/atta/.windsurf/worktrees/Est-of-pi-using-monte-carlo-method/Est-of-pi-using-monte-carlo-method-c7a8e5fd/README.md
 
 MIT License - see [LICENSE](LICENSE) for details.
 
@@ -420,15 +396,9 @@ MIT License - see [LICENSE](LICENSE) for details.
 
 <div align="center">
 
-<<<<<<< /Users/atta/Est-of-pi-using-monte-carlo-method/README.md
 **Made with ❤️ and mathematics**
 
 [⬆ Back to top](#-πmc)
-=======
-**Made with mathematics**
-
-[Back to top](#pimc)
->>>>>>> /Users/atta/.windsurf/worktrees/Est-of-pi-using-monte-carlo-method/Est-of-pi-using-monte-carlo-method-c7a8e5fd/README.md
 
 </div>
 
