@@ -1,142 +1,104 @@
 <div align="center">
 
-<<<<<<< /Users/atta/Est-of-pi-using-monte-carlo-method/README.md
-# 🎯 πMC
-=======
-# piMC
+# pimc
 
-### High-Performance Monte Carlo Estimation of π
+### high-performance monte carlo estimation of π
 
 [![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 [![Tests](https://img.shields.io/badge/tests-passing-brightgreen.svg)]()
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 
-**Beautiful** • **Fast** • **Accurate** • **Educational**
+**beautiful** | **fast** | **accurate** | **educational**
 
-[Features](#features) • [Quick Start](#quick-start) • [CLI](#command-line-interface) • [Web Dashboard](#web-dashboard) • [API](#python-api) • [Visualization](#visualization-themes)
-
-</div>
-
----
-
-## Features
-
-- **High Performance** — Vectorized NumPy computation with optional parallel processing
-- **Stunning Visualizations** — Publication-quality plots with 8 beautiful themes
-- **Advanced Statistics** — Confidence intervals, convergence diagnostics, hypothesis testing
-- **Variance Reduction** — Antithetic, stratified, and quasi-random sampling methods
-- **Rich CLI** — Beautiful terminal interface with progress bars and live updates
-- **Web Dashboard** — Interactive browser-based visualization with real-time simulation
-- **Real-Time Animation** — Watch the simulation converge in real-time
-- **Comprehensive Tests** — Full test suite with pytest
-
----
->>>>>>> /Users/atta/.windsurf/worktrees/Est-of-pi-using-monte-carlo-method/Est-of-pi-using-monte-carlo-method-c7a8e5fd/README.md
-
-### High-Performance Monte Carlo Estimation of π
-
-[![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
-[![Tests](https://img.shields.io/badge/tests-passing-brightgreen.svg)]()
-[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
-
-**Beautiful** • **Fast** • **Accurate** • **Educational**
-
-[Features](#-features) • [Quick Start](#-quick-start) • [CLI](#-command-line-interface) • [Web Dashboard](#-web-dashboard) • [API](#-python-api) • [Visualization](#-visualization)
+[features](#features) | [quick start](#quick-start) | [cli](#command-line-interface) | [web dashboard](#web-dashboard) | [api](#python-api) | [visualisation](#visualisation-themes)
 
 </div>
 
 ---
 
-## ✨ Features
+## features
 
-- **🚀 High Performance** — Vectorized NumPy computation with optional parallel processing
-- **🎨 Stunning Visualizations** — Publication-quality plots with 8 beautiful themes
-- **📊 Advanced Statistics** — Confidence intervals, convergence diagnostics, hypothesis testing
-- **🔬 Variance Reduction** — Antithetic, stratified, and quasi-random sampling methods
-- **💻 Rich CLI** — Beautiful terminal interface with progress bars and live updates
-- **🌐 Web Dashboard** — Interactive browser-based visualization with real-time simulation
-- **📈 Real-Time Animation** — Watch the simulation converge in real-time
-- **✅ Comprehensive Tests** — Full test suite with pytest
+- **high performance** — vectorised numpy computation with optional parallel processing
+- **stunning visualisations** — publication-quality plots with 8 beautiful themes
+- **advanced statistics** — confidence intervals, convergence diagnostics, hypothesis testing
+- **variance reduction** — antithetic, stratified, and quasi-random sampling methods
+- **rich cli** — beautiful terminal interface with progress bars and live updates
+- **web dashboard** — interactive browser-based visualisation with real-time simulation
+- **real-time animation** — watch the simulation converge in real-time
+- **comprehensive tests** — full test suite with pytest
 
 ---
 
-## 🚀 Quick Start
+## quick start
 
-### Installation
-
-### Installation
+### installation
 
 ```bash
-# Clone the repository
+# clone the repository
 git clone https://github.com/YOUR_USERNAME/pimc.git
 cd pimc
 
-# Install with pip (basic)
+# install with pip (basic)
 pip install -e .
 
-# Install with all extras (CLI + Web)
+# install with all extras (cli + web)
 pip install -e ".[all]"
 
-# Install for development
+# install for development
 pip install -e ".[dev]"
 ```
 
-### Run Your First Simulation
+### run your first simulation
 
 ```python
 from pimc import MonteCarloPi
 
-# Simple estimation
+# simple estimation
 sim = MonteCarloPi(n_points=1_000_000, seed=42)
 result = sim.run()
 
 print(f"π ≈ {result.estimate:.10f}")
-print(f"Error: {result.error:.2e}")
-print(f"Grade: {result.accuracy_grade}")
+print(f"error: {result.error:.2e}")
+print(f"grade: {result.accuracy_grade}")
 ```
 
-Output:
-```
+output:
+```text
 π ≈ 3.1416395600
-Error: 4.69e-05
-Grade: A
+error: 4.69e-05
+grade: A
 ```
 
 ---
 
-<<<<<<< /Users/atta/Est-of-pi-using-monte-carlo-method/README.md
-## 💻 Command-Line Interface
-=======
-## Command-Line Interface
->>>>>>> /Users/atta/.windsurf/worktrees/Est-of-pi-using-monte-carlo-method/Est-of-pi-using-monte-carlo-method-c7a8e5fd/README.md
+## command-line interface
 
-The CLI provides a beautiful terminal experience with rich formatting.
+the cli provides a beautiful terminal experience with rich formatting.
 
 ```bash
-# Basic simulation with 1 million points
+# basic simulation with 1 million points
 pimc run -n 1000000
 
-# Use variance reduction (antithetic sampling)
+# use variance reduction (antithetic sampling)
 pimc run -n 100000 --method antithetic
 
-# Save visualization to file
-pimc run -n 50000 -o visualization.png --theme cyberpunk
+# save visualisation to file
+pimc run -n 50000 -o visualisation.png --theme cyberpunk
 
-# Benchmark different methods
+# benchmark different methods
 pimc benchmark
 
-# Statistical analysis with 1000 trials
-pimc analyze -t 1000 -n 10000
+# statistical analysis with 1000 trials
+pimc analyse -t 1000 -n 10000
 
-# Interactive real-time animation
+# interactive real-time animation
 pimc interactive -n 20000
 ```
 
-### CLI Output Example
+### cli output example
 
-```
+```text
 ╔══════════════════════════════════════════════════════════════════════╗
 ║     ██████╗ ██╗███╗   ███╗ ██████╗                                   ║
 ║     ██╔══██╗██║████╗ ████║██╔════╝                                   ║
@@ -158,41 +120,33 @@ pimc interactive -n 20000
 
 ---
 
-<<<<<<< /Users/atta/Est-of-pi-using-monte-carlo-method/README.md
-## 🌐 Web Dashboard
-=======
-## Web Dashboard
->>>>>>> /Users/atta/.windsurf/worktrees/Est-of-pi-using-monte-carlo-method/Est-of-pi-using-monte-carlo-method-c7a8e5fd/README.md
+## web dashboard
 
-Launch an interactive web dashboard for visual exploration:
+launch an interactive web dashboard for visual exploration:
 
 ```bash
-# Start the web server
+# start the web server
 python -m pimc.web.app
 
-# Visit http://localhost:5000
+# visit http://localhost:5000
 ```
 
-Features:
-- **Real-time scatter plot** with D3.js
-- **Convergence chart** showing estimate approaching π
-- **Multiple sampling methods** to compare
-- **Adjustable sample sizes** with live updates
+features:
+- **real-time scatter plot** with D3.js
+- **convergence chart** showing estimate approaching π
+- **multiple sampling methods** to compare
+- **adjustable sample sizes** with live updates
 
 ---
 
-<<<<<<< /Users/atta/Est-of-pi-using-monte-carlo-method/README.md
-## 📚 Python API
-=======
-## Python API
->>>>>>> /Users/atta/.windsurf/worktrees/Est-of-pi-using-monte-carlo-method/Est-of-pi-using-monte-carlo-method-c7a8e5fd/README.md
+## python api
 
-### Basic Usage
+### basic usage
 
 ```python
 from pimc import MonteCarloPi, PiVisualizer, StatisticalAnalyzer
 
-# Run simulation
+# run simulation
 sim = MonteCarloPi(
     n_points=100_000,
     seed=42,
@@ -200,14 +154,14 @@ sim = MonteCarloPi(
 )
 result = sim.run()
 
-# Access results
-print(f"Estimate: {result.estimate}")
-print(f"Points inside: {result.n_inside:,}")
-print(f"Time: {result.elapsed_time*1000:.2f}ms")
-print(f"Points/sec: {result.points_per_second:,.0f}")
+# access results
+print(f"estimate: {result.estimate}")
+print(f"points inside: {result.n_inside:,}")
+print(f"time: {result.elapsed_time*1000:.2f}ms")
+print(f"points/sec: {result.points_per_second:,.0f}")
 ```
 
-### Visualization
+### visualisation
 
 ```python
 from pimc import MonteCarloPi, PiVisualizer
@@ -215,37 +169,37 @@ from pimc import MonteCarloPi, PiVisualizer
 sim = MonteCarloPi(n_points=50_000, seed=42)
 result = sim.run()
 
-# Create comprehensive visualization
+# create comprehensive visualisation
 viz = PiVisualizer(theme="cyberpunk")  # 8 themes available!
 viz.plot_comprehensive(result)
-viz.save("pi_visualization.png", dpi=300)
+viz.save("pi_visualisation.png", dpi=300)
 viz.show()
 ```
 
-### Statistical Analysis
+### statistical analysis
 
 ```python
 from pimc import MonteCarloPi, StatisticalAnalyzer
 
-analyzer = StatisticalAnalyzer(warmup_samples=100)
+analyser = StatisticalAnalyzer(warmup_samples=100)
 
-# Run multiple trials
+# run multiple trials
 for _ in range(1000):
     sim = MonteCarloPi(n_points=10_000)
     result = sim.run()
-    analyzer.add_estimate(result.estimate)
+    analyser.add_estimate(result.estimate)
 
-# Get statistics
-ci = analyzer.confidence_interval(level=0.95)
-print(f"95% CI: [{ci.lower:.8f}, {ci.upper:.8f}]")
-print(f"Contains π: {ci.contains_pi}")
+# get statistics
+ci = analyser.confidence_interval(level=0.95)
+print(f"95% ci: [{ci.lower:.8f}, {ci.upper:.8f}]")
+print(f"contains π: {ci.contains_pi}")
 
-summary = analyzer.summary()
-print(f"Mean: {summary['mean']:.10f}")
-print(f"Std: {summary['std']:.6f}")
+summary = analyser.summary()
+print(f"mean: {summary['mean']:.10f}")
+print(f"std: {summary['std']:.6f}")
 ```
 
-### Streaming for Real-Time Visualization
+### streaming for real-time visualisation
 
 ```python
 from pimc import MonteCarloPi
@@ -258,24 +212,20 @@ for n, estimate, x, y, inside in sim.stream(batch_size=100):
 
 ---
 
-<<<<<<< /Users/atta/Est-of-pi-using-monte-carlo-method/README.md
-## 🎨 Visualization Themes
-=======
-## Visualization Themes
->>>>>>> /Users/atta/.windsurf/worktrees/Est-of-pi-using-monte-carlo-method/Est-of-pi-using-monte-carlo-method-c7a8e5fd/README.md
+## visualisation themes
 
-Choose from 8 stunning themes:
+choose from 8 stunning themes:
 
-| Theme | Description |
+| theme | description |
 |-------|-------------|
-| `midnight` | Deep blue-black with cyan/magenta accents (default) |
-| `cyberpunk` | Neon colors on dark purple background |
-| `ocean` | Deep sea blues with aqua highlights |
-| `forest` | Natural greens with earth tones |
-| `neon` | Pure black with bright neon colors |
-| `sunset` | Warm oranges and reds |
-| `publication` | Clean white background for papers |
-| `colorblind` | Accessible color palette |
+| `midnight` | deep blue-black with cyan/magenta accents (default) |
+| `cyberpunk` | neon colours on dark purple background |
+| `ocean` | deep sea blues with aqua highlights |
+| `forest` | natural greens with earth tones |
+| `neon` | pure black with bright neon colours |
+| `sunset` | warm oranges and reds |
+| `publication` | clean white background for papers |
+| `colourblind` | accessible colour palette |
 
 ```python
 from pimc import PiVisualizer
@@ -285,23 +235,19 @@ viz = PiVisualizer(theme="cyberpunk")
 
 ---
 
-<<<<<<< /Users/atta/Est-of-pi-using-monte-carlo-method/README.md
-## 🔬 Sampling Methods
-=======
-## Sampling Methods
->>>>>>> /Users/atta/.windsurf/worktrees/Est-of-pi-using-monte-carlo-method/Est-of-pi-using-monte-carlo-method-c7a8e5fd/README.md
+## sampling methods
 
-| Method | Description | Variance Reduction |
+| method | description | variance reduction |
 |--------|-------------|-------------------|
-| `standard` | Uniform random sampling | Baseline |
-| `antithetic` | Uses (x, y) and (1-x, 1-y) pairs | ~30% reduction |
-| `stratified` | Divides space into grid cells | ~40% reduction |
-| `quasi_random` | Halton low-discrepancy sequence | ~50% reduction |
+| `standard` | uniform random sampling | baseline |
+| `antithetic` | uses (x, y) and (1-x, 1-y) pairs | ~30% reduction |
+| `stratified` | divides space into grid cells | ~40% reduction |
+| `quasi_random` | halton low-discrepancy sequence | ~50% reduction |
 
 ```python
 from pimc import MonteCarloPi
 
-# Compare methods
+# compare methods
 for method in ["standard", "antithetic", "stratified", "quasi_random"]:
     sim = MonteCarloPi(n_points=100_000, method=method, seed=42)
     result = sim.run()
@@ -310,21 +256,17 @@ for method in ["standard", "antithetic", "stratified", "quasi_random"]:
 
 ---
 
-<<<<<<< /Users/atta/Est-of-pi-using-monte-carlo-method/README.md
-## 📐 The Mathematics
-=======
-## The Mathematics
->>>>>>> /Users/atta/.windsurf/worktrees/Est-of-pi-using-monte-carlo-method/Est-of-pi-using-monte-carlo-method-c7a8e5fd/README.md
+## the mathematics
 
-The Monte Carlo method estimates π using geometric probability:
+the monte carlo method estimates π using geometric probability:
 
-```
+```text
 ┌─────────────────────────────────────┐
-│  Area of quarter circle   π/4      │
+│  area of quarter circle   π/4      │
 │  ─────────────────────── = ───     │
-│  Area of unit square       1       │
+│  area of unit square       1       │
 │                                     │
-│  Therefore:                         │
+│  therefore:                         │
 │                                     │
 │  π = 4 × (points inside circle)    │
 │        ─────────────────────────   │
@@ -332,103 +274,81 @@ The Monte Carlo method estimates π using geometric probability:
 └─────────────────────────────────────┘
 ```
 
-### Convergence Rate
+### convergence rate
 
-The error decreases at rate **O(1/√n)**:
+the error decreases at rate **O(1/√n)**:
 - 100 points → ~0.16 error
 - 10,000 points → ~0.016 error  
 - 1,000,000 points → ~0.0016 error
 
 ---
 
-<<<<<<< /Users/atta/Est-of-pi-using-monte-carlo-method/README.md
-## 🧪 Testing
-=======
-## Testing
->>>>>>> /Users/atta/.windsurf/worktrees/Est-of-pi-using-monte-carlo-method/Est-of-pi-using-monte-carlo-method-c7a8e5fd/README.md
+## testing
 
 ```bash
-# Run all tests
+# run all tests
 pytest
 
-# Run with coverage
+# run with coverage
 pytest --cov=pimc --cov-report=html
 
-# Run specific test file
+# run specific test file
 pytest tests/test_simulation.py -v
 ```
 
 ---
 
-<<<<<<< /Users/atta/Est-of-pi-using-monte-carlo-method/README.md
-## 📁 Project Structure
-=======
-## Project Structure
->>>>>>> /Users/atta/.windsurf/worktrees/Est-of-pi-using-monte-carlo-method/Est-of-pi-using-monte-carlo-method-c7a8e5fd/README.md
+## project structure
 
-```
+```text
 pimc/
-├── __init__.py          # Package exports
+├── __init__.py          # package exports
 ├── __main__.py          # python -m pimc entry point
 ├── core/
-│   ├── simulation.py    # Monte Carlo engine
-│   └── statistics.py    # Statistical analysis
-├── visualization/
-│   ├── plots.py         # Matplotlib visualizations
-│   └── themes.py        # Color themes
+│   ├── simulation.py    # monte carlo engine
+│   └── statistics.py    # statistical analysis
+├── visualisation/
+│   ├── plots.py         # matplotlib visualisations
+│   └── themes.py        # colour themes
 ├── cli/
-│   └── main.py          # Rich CLI interface
+│   └── main.py          # rich cli interface
 └── web/
-    ├── app.py           # Flask web server
-    └── templates/       # HTML templates
+    ├── app.py           # flask web server
+    └── templates/       # html templates
 ```
 
 ---
 
-<<<<<<< /Users/atta/Est-of-pi-using-monte-carlo-method/README.md
-## 🎓 Educational Value
-=======
-## Educational Value
->>>>>>> /Users/atta/.windsurf/worktrees/Est-of-pi-using-monte-carlo-method/Est-of-pi-using-monte-carlo-method-c7a8e5fd/README.md
+## educational value
 
-This project demonstrates:
+this project demonstrates:
 
-- **Monte Carlo Methods** — Random sampling for numerical estimation
-- **Probability Theory** — Geometric probability and the law of large numbers
-- **Variance Reduction** — Techniques to improve estimation efficiency
-- **Statistical Inference** — Confidence intervals and hypothesis testing
-- **Convergence Analysis** — Understanding simulation accuracy
-- **Software Engineering** — Clean architecture, testing, documentation
+- **monte carlo methods** — random sampling for numerical estimation
+- **probability theory** — geometric probability and the law of large numbers
+- **variance reduction** — techniques to improve estimation efficiency
+- **statistical inference** — confidence intervals and hypothesis testing
+- **convergence analysis** — understanding simulation accuracy
+- **software engineering** — clean architecture, testing, documentation
 
-Perfect for courses in:
-- Computational Mathematics
-- Probability and Statistics
-- Scientific Computing
-- Quantitative Finance
+perfect for courses in:
+- computational mathematics
+- probability and statistics
+- scientific computing
+- quantitative finance
 
 ---
 
-<<<<<<< /Users/atta/Est-of-pi-using-monte-carlo-method/README.md
-## 📄 License
-=======
-## License
->>>>>>> /Users/atta/.windsurf/worktrees/Est-of-pi-using-monte-carlo-method/Est-of-pi-using-monte-carlo-method-c7a8e5fd/README.md
+## licence
 
-MIT License - see [LICENSE](LICENSE) for details.
+mit licence - see [LICENSE](LICENSE) for details.
 
 ---
 
 <div align="center">
 
-<<<<<<< /Users/atta/Est-of-pi-using-monte-carlo-method/README.md
-**Made with ❤️ and mathematics**
+**made with mathematics**
 
-[⬆ Back to top](#-πmc)
-=======
-**Made with mathematics**
-
-[Back to top](#pimc)
->>>>>>> /Users/atta/.windsurf/worktrees/Est-of-pi-using-monte-carlo-method/Est-of-pi-using-monte-carlo-method-c7a8e5fd/README.md
+[back to top](#pimc)
 
 </div>
 
