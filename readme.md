@@ -6,7 +6,7 @@ A Monte Carlo simulation to estimate π using random sampling and geometric prob
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/YOUR_USERNAME/Est-of-pi-using-monte-carlo-method.git
+git clone https://github.com/Amirhajomar/Est-of-pi-using-monte-carlo-method.git
 
 # 2. Navigate to the project
 cd Est-of-pi-using-monte-carlo-method
